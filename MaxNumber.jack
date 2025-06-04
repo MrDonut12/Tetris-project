@@ -1,0 +1,36 @@
+class MaxNumber {
+    function void main() {
+        var Array numbers;
+        var int length;
+        var int i;
+        var int max;
+
+        let length = 5;
+        let numbers = Array.new(length); // cấp phát mảng với độ dài 5
+
+
+        let numbers[0] = 7;
+        let numbers[1] = 2;
+        let numbers[2] = 10;
+        let numbers[3] = 4;
+        let numbers[4] = 6;
+
+        let max = numbers[0];
+
+        let i = 1;
+        while (i < length) {
+            if (numbers[i] > max) {
+                let max = numbers[i];
+            }
+            let i = i + 1;
+        }
+
+
+        do Output.printString("Max number is: ");
+        do Output.printInt(max);
+        do Output.println();
+
+        do Sys.halt();
+        return;
+    }
+}
