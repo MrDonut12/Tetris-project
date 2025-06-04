@@ -6,7 +6,7 @@ class MaxNumber {
         var int max;
 
         let length = 5;
-        let numbers = Array.new(length); // cấp phát mảng với độ dài 5
+        let numbers = Array.new(length);
 
 
         let numbers[0] = 7;
